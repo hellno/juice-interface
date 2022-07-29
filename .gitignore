@@ -37,3 +37,5 @@ src/styles/antd.css
 # GraphQL Codegen
 graphql.schema.json
 src/generated
+src/locales/**/*
+!src/locales/messages.pot
