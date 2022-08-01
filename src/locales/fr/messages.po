@@ -242,8 +242,12 @@ msgid "<0>There are unit tests written for every condition of every function in 
 msgstr "<0>Il y a des tests unitaires écrits pour chaque condition de chaque fonction dans les contrats, ainsi que des tests d'intégration pour chaque flux de travail pris en charge par le protocole.</0><1>Il y avait également un script écrit pour exécuter de manière itérative les tests d'intégration à l'aide d'un générateur d'entrées aléatoires, en accordant la priorité aux cas extrêmes. Le code a atteint avec succès plus d'un million de cas de test grâce à ce script de simulation de crise.</1> <2>Le code pourrait toujours utiliser plus d'agents pour surveiller et plus de critiques pour renforcer la confiance de la communauté. Rejoignez notre <3>Discord</3> et consultez le code sur <4>GitHub</4> pour travailler avec nous.</2>"
 
 #: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "<0>This project has no overflow</0>, so you will not receive any ETH for burning tokens."
-msgstr "<0> Ce projet n'a pas d'overflow</0>, donc vous ne recevrez aucun ETH pour avoir brûlé des tokens."
+msgid "<0>This project has a redemption rate of 0%</0>. You won't receive any ETH for burning your tokens."
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "<0>This project has no overflow</0>. You won't receive any ETH for burning your tokens."
+msgstr ""
 
 #: src/pages/home/QAs.tsx
 msgid "<0>This website (juicebox.money) connects to the Juicebox protocol's smart contracts, deployed on the Ethereum network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Juicebox protocol).</0><1>Creating a Juicebox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed.</1><2>The project's tokens that are minted and distributed as a result of a received payment are ERC-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time.</2>"
@@ -1016,7 +1020,6 @@ msgid "Current owner: {ownerAddress}"
 msgstr "Propriétaire actuel: {ownerAddress}"
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
 msgid "Currently worth: <0><1/>{0}</0>"
 msgstr "Valeur actuelle : <0><1/>{0}</0>"
 
@@ -2745,6 +2748,10 @@ msgstr ""
 msgid "Redeem veNFT"
 msgstr ""
 
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Redeem your tokens for a portion of this project's overflow. The current funding cycle's <0>redemption rate</0> determines your redemption value."
+msgstr ""
+
 #: src/components/ManageTokensModal.tsx
 msgid "Redeem your {tokensLabel} for a portion of the project's overflow. Any {tokensLabel} you redeem will be burned."
 msgstr "Récupérer vos {tokensLabel} d'une portion de l'overflow du projet. Aucun {tokensLabel} récupéré sera brûlé."
@@ -2790,6 +2797,10 @@ msgstr ""
 #: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
 msgid "Redemption rate: <0>{0}%</0>"
 msgstr "Taux de récupération : <0>{0}%</0>"
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Redemption value: <0><1/>{0}</0>"
+msgstr ""
 
 #: src/components/NewDeployNotAvailable.tsx
 msgid "Refresh"
@@ -3531,10 +3542,6 @@ msgstr "Les tokens peuvent être récupérés d'une partie de l' <0>overflow</0>
 msgid "Tokens can be redeemed for a portion of this project's ETH overflow, according to the bonding curve rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
 msgstr "Les tokens peuvent être récupérés d'une partie de l'overflow d'ETH de ce projet, selon le taux de la courbe de liaison du cycle de financement en cours. <0>Les tokens sont brûlés lorsqu'ils sont récupérés.</0>"
 
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "Tokens can be redeemed for a portion of this project's ETH overflow, according to the redemption rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
-msgstr "Les tokens peuvent être récupérés d'une partie de l'overflow d'ETH de ce projet, selon le taux de rachat du cycle de financement en cours. <0> Les tokens sont brûlés lorsqu'ils sont récupérés.</0>"
-
 #: src/components/v2/V2Project/V2ManageTokensSection/V2ClaimTokensModal.tsx
 msgid "Tokens cannot be claimed because no ERC-20 token has been issued for this project. ERC-20 tokens must be issued by the project owner."
 msgstr "Les tokens ne peuvent pas être réclamés, car aucun token ERC-20 a été émis pour ce projet. Les tokens ERC-20 doivent être émis par le propriétaire du projet."
@@ -3543,6 +3550,14 @@ msgstr "Les tokens ne peuvent pas être réclamés, car aucun token ERC-20 a ét
 #: src/components/v2/V2Project/V2ManageTokensSection/V2MintModal.tsx
 msgid "Tokens receiver"
 msgstr "Bénéficiaire de tokens"
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Tokens to burn"
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Tokens to redeem"
+msgstr ""
 
 #: src/components/v2/shared/SplitItem.tsx
 msgid "Tokens:"
@@ -3933,10 +3948,6 @@ msgstr ""
 msgid "You have configured for all funds to be distributed from the treasury. Your current payouts do not sum to 100%, so the remainder will go to the project owner."
 msgstr "Vous avez configuré pour que tous les fonds soient distribués à partir de la trésorerie. Vos paiements actuels ne totalisent pas 100%, le reste ira donc au propriétaire du projet."
 
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "You have exceeded the total token supply of <0>{0}</0>"
-msgstr ""
-
 #: src/components/v1/shared/forms/BudgetForm.tsx
 msgid "You have set a funding cycle target."
 msgstr "Vous avez défini un objectif du cycle de financement."
@@ -4068,6 +4079,10 @@ msgstr "Vos {tokenTextLong} non réclamés"
 
 #: src/components/veNft/formControls/VotingPowerDisplayInput.tsx
 msgid "Your voting power"
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Your {0} balance: <0><1>{1} {tokensTextShort}</1></0>"
 msgstr ""
 
 #: src/components/v2/V2Project/DistributionLimit.tsx
@@ -4207,10 +4222,6 @@ msgstr "{0} sont distribués à tous ceux qui paient ce projet. Si le projet a d
 #: src/components/modals/ParticipantsModal.tsx
 msgid "{0} balance"
 msgstr "{0} solde"
-
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "{0} balance: <0><1>{1} {tokensTextShort}</1><2>({share}% of supply)</2></0>"
-msgstr "{0} solde : <0><1>{1} {tokensTextShort}</1><2>({share}% d'offre)</2></0>"
 
 #: src/components/modals/ParticipantsModal.tsx
 msgid "{0} contributed"

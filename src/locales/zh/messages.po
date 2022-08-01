@@ -242,8 +242,12 @@ msgid "<0>There are unit tests written for every condition of every function in 
 msgstr "<0>合约里每个函数的每个条件都有编写单元测试, 同时协议支持的每个工作流都有集成测试。</0><1>之前还编写了一个脚本用于使用随机生成的输入条件来进行迭代集成测试，优先考虑边缘案例。代码通过这个压力测试脚本成功经受了超过一百万次的测试案例。</1> <2>欢迎大家对代码进行进一步的审核和批评，这样可以增强社区的信心。 加入我们的<3>Discord</3> 及查阅 <4>GitHub</4>上的代码，跟我们一起工作。</2>"
 
 #: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "<0>This project has no overflow</0>, so you will not receive any ETH for burning tokens."
-msgstr "<0>此项目没有溢出</0>，所以您无法通过燃烧代币来获得 ETH。"
+msgid "<0>This project has a redemption rate of 0%</0>. You won't receive any ETH for burning your tokens."
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "<0>This project has no overflow</0>. You won't receive any ETH for burning your tokens."
+msgstr ""
 
 #: src/pages/home/QAs.tsx
 msgid "<0>This website (juicebox.money) connects to the Juicebox protocol's smart contracts, deployed on the Ethereum network. (note: anyone else can make a website that also connects to these same smart contracts. For now, don't trust any site other than this one to access the Juicebox protocol).</0><1>Creating a Juicebox project mints you an NFT (ERC-721) representing ownership over it. Whoever owns this NFT can configure the rules of the game and how payouts are distributed.</1><2>The project's tokens that are minted and distributed as a result of a received payment are ERC-20's. The amount of tokens minted and distributed are proportional to the volume of payments received, weighted by the project's discount rate over time.</2>"
@@ -1016,7 +1020,6 @@ msgid "Current owner: {ownerAddress}"
 msgstr "当前项目方：{ownerAddress}"
 
 #: src/components/v1/V1Project/modals/RedeemModal.tsx
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
 msgid "Currently worth: <0><1/>{0}</0>"
 msgstr "当前价值： <0><1/>{0}</0>"
 
@@ -2745,6 +2748,10 @@ msgstr ""
 msgid "Redeem veNFT"
 msgstr ""
 
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Redeem your tokens for a portion of this project's overflow. The current funding cycle's <0>redemption rate</0> determines your redemption value."
+msgstr ""
+
 #: src/components/ManageTokensModal.tsx
 msgid "Redeem your {tokensLabel} for a portion of the project's overflow. Any {tokensLabel} you redeem will be burned."
 msgstr "赎回你的 {tokensLabel} 来获取一部分项目的溢出资金。用于赎回的 {tokensLabel} 将会被燃烧掉。"
@@ -2790,6 +2797,10 @@ msgstr ""
 #: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
 msgid "Redemption rate: <0>{0}%</0>"
 msgstr "赎回比率: <0>{0}%</0>"
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Redemption value: <0><1/>{0}</0>"
+msgstr ""
 
 #: src/components/NewDeployNotAvailable.tsx
 msgid "Refresh"
@@ -3531,10 +3542,6 @@ msgstr "代币可以用来赎回一部分项目的 <0>溢出资金</0>，让你�
 msgid "Tokens can be redeemed for a portion of this project's ETH overflow, according to the bonding curve rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
 msgstr "代币可以用于赎回项目溢出的一部分 ETH，基于当前筹款周期的联合曲线率。<0>赎回时代币会被燃烧掉。</0>"
 
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "Tokens can be redeemed for a portion of this project's ETH overflow, according to the redemption rate of the current funding cycle. <0>Tokens are burned when they are redeemed.</0>"
-msgstr "可以通过赎回代币，按当前筹款周期的赎回比率来获取项目的部分溢出。 <0>赎回的代币会被销毁掉。</0>"
-
 #: src/components/v2/V2Project/V2ManageTokensSection/V2ClaimTokensModal.tsx
 msgid "Tokens cannot be claimed because no ERC-20 token has been issued for this project. ERC-20 tokens must be issued by the project owner."
 msgstr "因为 ERC-20 代币还没有签发，所以目前还不能领取代币。ERC-20 代币必须由项目方来签发。"
@@ -3543,6 +3550,14 @@ msgstr "因为 ERC-20 代币还没有签发，所以目前还不能领取代币�
 #: src/components/v2/V2Project/V2ManageTokensSection/V2MintModal.tsx
 msgid "Tokens receiver"
 msgstr "代币接收方"
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Tokens to burn"
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Tokens to redeem"
+msgstr ""
 
 #: src/components/v2/shared/SplitItem.tsx
 msgid "Tokens:"
@@ -3933,10 +3948,6 @@ msgstr ""
 msgid "You have configured for all funds to be distributed from the treasury. Your current payouts do not sum to 100%, so the remainder will go to the project owner."
 msgstr "你已经配置把金库的所有资金分配出去。你当前的支出总额没有达到所有资金的100%，因此剩余部分将会分配给项目方。"
 
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "You have exceeded the total token supply of <0>{0}</0>"
-msgstr ""
-
 #: src/components/v1/shared/forms/BudgetForm.tsx
 msgid "You have set a funding cycle target."
 msgstr "您设定了一个筹款周期目标。"
@@ -4068,6 +4079,10 @@ msgstr "你的待领取 {tokenTextLong} 代币"
 
 #: src/components/veNft/formControls/VotingPowerDisplayInput.tsx
 msgid "Your voting power"
+msgstr ""
+
+#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
+msgid "Your {0} balance: <0><1>{1} {tokensTextShort}</1></0>"
 msgstr ""
 
 #: src/components/v2/V2Project/DistributionLimit.tsx
@@ -4207,10 +4222,6 @@ msgstr "任何人付款给项目都会得到 {0} 代币 。 只要项目设置�
 #: src/components/modals/ParticipantsModal.tsx
 msgid "{0} balance"
 msgstr "{0} 余额"
-
-#: src/components/v2/V2Project/V2ManageTokensSection/V2RedeemModal.tsx
-msgid "{0} balance: <0><1>{1} {tokensTextShort}</1><2>({share}% of supply)</2></0>"
-msgstr "{0} 余额: <0><1>{1} {tokensTextShort}</1><2>(总发行量的{share}%)</2></0>"
 
 #: src/components/modals/ParticipantsModal.tsx
 msgid "{0} contributed"
