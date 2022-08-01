@@ -190,7 +190,7 @@ export default function V2RedeemModal({
               )}
               {!hasRedemptionRate && (
                 <Trans>
-                  <strong>This project has a redemption rate of 0%</strong>. You
+                  <strong>This project has a 0% redemption rate</strong>. You
                   won't receive any ETH for burning your tokens.
                 </Trans>
               )}
